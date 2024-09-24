@@ -1,0 +1,523 @@
+/* desktop.css */
+
+@media (min-width: 850px) {
+  .desktop-display-none {
+    display: none;
+  }
+
+  .desktop-line-break::after {
+    content: none; /* | 기호를 없애줍니다 */
+    content: "\A"; /* 줄바꿈 */
+    white-space: pre; /* 줄바꿈을 처리할 수 있도록 설정 */
+  }
+
+  .work-with-us {
+    width: 160px;
+    height: 48px;
+    background-color: #ef6c33;
+    position: fixed;
+    top: 50%;
+    right: -56px;
+    padding: 10px 20px;
+    color: white;
+    transform: rotate(90deg); /* 세로로 회전 */
+    transform-origin: center; /* 회전 중심을 설정 */
+    text-align: center;
+    z-index: 1000;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 얕은 그림자 */
+  }
+  /* 전체 네비게이션 스타일 */
+  .navbar {
+    width: 100%;
+    background-color: white;
+    transition: none;
+    position: relative;
+    width: 100vw;
+  }
+
+  /* 상단 바 (Find an A&W, 언어 선택) 스타일 */
+  .navbar-top {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    background-color: #ffffff;
+    font-weight: 500;
+    padding: 7px 0px;
+  }
+
+  .find-aw a {
+    text-decoration: none;
+    padding: 4px 0px;
+
+    margin: 0 12px 0 0;
+    font-size: 14.4px;
+  }
+
+  .language-switch a {
+    text-decoration: none;
+    font-size: 14.4px;
+  }
+
+  .language-switch a:hover {
+    text-decoration: underline;
+  }
+
+  /* 하단 바 (로고, 메뉴, 햄버거 버튼) 스타일 */
+  .navbar-bottom {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* 로고 스타일 */
+  .logo img {
+    width: 116px;
+    height: 59.3px;
+    margin-right: 2px;
+  }
+
+  /* 메뉴 스타일 */
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+  }
+
+  .navbar-bottom a,
+  .navbar-bottom span {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: "sans-serif";
+    display: inline-block; /* transform이 제대로 적용되도록 inline-block 사용 */
+  }
+
+  .navbar-bottom a {
+    transform: scaleX(0.8); /* 0.8로 설정하면 장평이 80%로 줄어듭니다. */
+  }
+
+  .menu li a:hover, .menu li a:hover span {
+    color: #ff6600; /* A&W의 주황색 톤 */
+}
+  /* 햄버거 메뉴 버튼 스타일 */
+  /* 메뉴 토글 숨김 */
+  .menu-checkbox {
+    display: none;
+  }
+
+  /* 햄버거 메뉴 아이콘 */
+  .icon-menu-wrap {
+    position: relative;
+    width: 30px;
+    height: 3px;
+    background-color: transparent;
+    display: block;
+    cursor: pointer;
+  }
+
+  .icon-menu-wrap span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #4b3327;
+    transition: all 0.3s ease;
+  }
+
+  /* 위, 아래 막대 스타일 */
+  .icon-menu-wrap span::before,
+  .icon-menu-wrap span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+
+  /* 위 막대 (before) */
+  .icon-menu-wrap span::before {
+    top: -8px;
+  }
+
+  /* 아래 막대 (after) */
+  .icon-menu-wrap span::after {
+    bottom: -8px;
+  }
+
+  /* 체크박스가 선택된 상태에서 아이콘 변형 */
+  .menu-checkbox:checked + .icon-menu-wrap span::before {
+    transform: rotate(45deg);
+    background-color: #ff6218;
+    top: 0;
+  }
+
+  .menu-checkbox:checked + .icon-menu-wrap span::after {
+    transform: rotate(-45deg);
+    background-color: #ff6218;
+    bottom: 0;
+  }
+
+  .menu-checkbox:checked + .icon-menu-wrap span {
+    background-color: transparent; /* 가운데 막대 숨기기 */
+  }
+
+  
+
+  /* 드롭다운 메뉴 */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0; /* 왼쪽 끝으로 설정 */
+    right: 0; /* 오른쪽 끝으로 설정 */
+    z-index: 1;
+    width: 100vw; /* 화면 전체 너비 */
+    top: 100%;
+    padding: 0; /* 패딩 제거 */
+    margin: 0; /* 마진 제거 */
+    background-color: white;
+  }
+
+  /* 공통 스타일 */
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-menu ul li {
+    overflow: hidden;
+  }
+  
+  
+
+  .dropdown-menu ul li a {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dropdown-menu ul li a:hover {
+    background-color: #ff6218; /* A&W 주황색 */
+    color: white;
+  }
+
+  /* 화살표 아이콘 스타일 */
+  .dropdown_arrow {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjgwMHB4IiB3aWR0aD0iODAwcHgiIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDQ5MCA0OTAiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik0yNDUsMEMxMDkuNywwLDAsMTA5LjcsMCwyNDVzMTA5LjcsMjQ1LDI0NSwyNDVzMjQ1LTEwOS43LDI0NS0yNDVTMzc5LjMsMCwyNDUsMHogTTMxNSwyODcuN2wtOTAuNSw5MC41bC00Mi43LTQyLjdMMjk4LjMsMjQ0bC05MC41LTkwLjVsNDIuNy00Mi43bDkwLjUsOTAuNWw0Mi43LDQyLjdMMzE1LDI4Ny43eiIvPjwvZz48L3N2Zz4=");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+    top: 12px;
+  }
+
+  /* 배경 이미지 및 기본 오버레이 */
+  .dropdown-menu ul li:nth-child(1) a {
+    background: url("./assets/nav/work_with_us.png") no-repeat center center;
+    background-size: cover;
+    height: 211px;
+    overflow: hidden;
+    transition: background-color 0.9s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* 검은색 오버레이 */
+    background-blend-mode: multiply; /* 이미지와 색상을 섞는 방식 설정 */
+    z-index: 1;
+  }
+
+  .dropdown-menu ul li:nth-child(2) a {
+    background: url("./assets/nav/FAQ.png") no-repeat center center;
+    background-size: cover;
+    height: 211px;
+    overflow: hidden;
+    transition: background-color 0.9s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* 검은색 오버레이 */
+    background-blend-mode: multiply; /* 이미지와 색상을 섞는 방식 설정 */
+    z-index: 1;
+  }
+
+  .dropdown-menu ul li:nth-child(3) a {
+    background: url("./assets/nav/contact_us.jpg") no-repeat 30% 20%;
+    background-size: cover;
+    height: 211px;
+    overflow: hidden;
+    transition: background-color 0.9s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* 검은색 오버레이 */
+    background-blend-mode: multiply; /* 이미지와 색상을 섞는 방식 설정 */
+    z-index: 1;
+  }
+
+  .dropdown-menu ul li:nth-child(4) a {
+    background: url("./assets/nav/gift-card.jpg") no-repeat center center;
+    background-size: 150%;
+    height: 211px;
+    overflow: hidden;
+    transition: background-color 0.9s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* 검은색 오버레이 */
+    background-blend-mode: multiply; /* 이미지와 색상을 섞는 방식 설정 */
+    z-index: 1;
+  }
+
+  /* 오버레이 효과 */
+  .dropdown-menu ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 102, 0, 0); /* 주황색 오버레이 초기 상태 */
+    transition: background-color 0.7s ease;
+    z-index: 1; /* 텍스트보다 아래에 표시 */
+  }
+
+  /* hover 시 오버레이 색상 변화 */
+  .dropdown-menu ul li a:hover::before {
+    background-color: rgba(255, 102, 0, 1); /* hover 시 주황색 오버레이 */
+  }
+
+  /* 텍스트와 아이콘을 오버레이 위에 표시 */
+  .dropdown-menu ul li a span,
+  .dropdown-menu ul li a i {
+    position: relative;
+    z-index: 2; /* 텍스트가 오버레이 위에 나타나도록 설정 */
+    color: #ffffff;
+    font-size: 35px;
+  }
+
+  /* 체크박스가 체크된 상태에서 드롭다운 메뉴를 표시 */
+  .menu-checkbox:checked ~ .dropdown-menu {
+    display: block;
+  }
+
+  /* 드롭다운 메뉴 애니메이션 */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .menu-checkbox:checked ~ .dropdown-menu {
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  /* hero section */
+  .hero_section {
+    position: relative;
+    height: auto;
+  }
+
+  .hero_section-img-conitner img {
+    width: 100vw; /* 화면 너비에 맞춤 */
+    height: 100vh; /* 화면 높이에 맞춤 */
+    object-fit: cover; /* 비율을 유지하며 화면을 꽉 채움 */
+  }
+
+  .bounce_arrow {
+    animation: bounce 2s infinite; /* 2초 동안 반복되는 바운스 애니메이션 */
+    width: 60px;
+    position: absolute; /* 절대 위치로 hero_section 안에 배치 */
+    left: 45%; /* 가로 중앙에 위치 */
+    bottom: 20px;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0); /* 초기 위치 */
+    }
+    40% {
+      transform: translateY(-30px); /* 위로 20px 이동 */
+    }
+    60% {
+      transform: translateY(-10px); /* 위로 10px 이동 */
+    }
+  }
+
+  .home-promotion-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .home-promotion-container a img {
+    width: 50vw;
+  }
+
+  /* 전체 배너 스타일 */
+  .blockwrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .mobile-order-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    margin: 50px 30px 10px 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    padding: 45px 50px;
+  }
+  .mobileapp-callout {
+    display: flex;
+    gap: 20px;
+  }
+
+  .mobileapp-callout img {
+    width: 75px;
+    height: 75px;
+  }
+  /* 앱 아이콘 스타일 */
+
+  /* 텍스트 스타일 */
+  .mobileapp-copy h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff6218;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  .mobileapp-copy p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.3;
+  }
+
+  /* 버튼 스타일 */
+  .mobileapp-btn {
+    margin-top: 20px;
+  }
+
+  .mobileapp-btn a {
+    padding: 3px 13px;
+    background-color: #ff6218;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+  }
+
+  .order-btn:hover {
+    background-color: #e55b00;
+  }
+
+  /* footer */
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    padding-bottom: 8vw;
+    padding-top: 8vw;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .icon-circle {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    width: 52px;
+    height: 52px;
+    border-radius: 50%; /* 원형으로 만들기 */
+    background-color: #ff6218; /* 배경색: 페이스북 파란색 */
+    color: white; /* 아이콘 색상 */
+    text-decoration: none;
+  }
+
+  .icon-circle i {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .footer-language-selector {
+    display: flex;
+    align-items: center; /* 아이콘과 텍스트가 수직 가운데 정렬 */
+    justify-content: center; /* 가로로 중앙 정렬 */
+  }
+
+  .footer-language-selector hr {
+    width: 30vw;
+    margin: 0 10px; /* hr 태그 양쪽 여백 설정 */
+    border: none; /* 기본 테두리 제거 */
+    border-top: 1px dashed #d8d8d8; /* 점선으로 설정 */
+  }
+
+  .footer-language-selector span {
+    font-size: 15px;
+  }
+
+  .footer-language-selector i {
+    color: #e0021a;
+    font-size: 30px;
+    margin: 18px;
+  }
+
+  .footer-links {
+    text-align: center;
+    font-size: 14.4px;
+    line-height: 0;
+  }
+  .footer-links a {
+    text-decoration: none;
+    white-space: nowrap; /* 기본적으로 줄바꿈 방지 */
+    color: #676767;
+    line-height: 0;
+  }
+
+  .footer-links a + a::before {
+    content: "|      "; /* 각 a 태그 사이에 | 기호 추가 */
+    margin: 0;
+  }
+
+  .desktop-line-break {
+    display: inline-block; /* 모바일 화면에서 줄바꿈 */
+    width: 100%; /* 줄바꿈을 위한 넓이 설정 */
+  }
+
+  /* 줄바꿈 후 첫 번째 a 태그 앞의 | 기호 제거 */
+  .desktop-line-break + a::before {
+    content: none; /* 줄바꿈 후 첫 번째 링크의 | 제거 */
+  }
+
+  .footer-last-paragraph {
+    text-align: center;
+    font-size: 11px;
+    margin: 40px 10px 100px 10px;
+  }
+}
