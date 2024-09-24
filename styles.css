@@ -1,13 +1,20 @@
-@import url('mobile.css');
-@import url('desktop.css');
+@import url('./styles/desktop.css');
+@import url('./styles/mobile.css');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #4B3327;
-    line-height: 2.0;
+    line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
-    transition: all 0.5s ease; /* 모든 속성에 0.5초 동안 부드럽게 변화 */
-    transform-origin: center; /* 모든 요소가 중앙을 기준으로 변형 */
+    transition: all 0.5s ease;
+    transform-origin: center; 
 }
+
+:root {
+    --primary-color: #ff6218;
+    --secondary-color: #ef6c33;
+    --text-color: #333;
+    --hover-color: #ff6600;
+  }

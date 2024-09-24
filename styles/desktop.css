@@ -1,4 +1,5 @@
 /* desktop.css */
+@import url(styles.css);
 
 @media (min-width: 850px) {
   .desktop-display-none {
@@ -6,26 +7,26 @@
   }
 
   .desktop-line-break::after {
-    content: none; /* | 기호를 없애줍니다 */
-    content: "\A"; /* 줄바꿈 */
-    white-space: pre; /* 줄바꿈을 처리할 수 있도록 설정 */
+    content: none;
+    content: "\A";
+    white-space: pre; 
   }
 
   .work-with-us {
     width: 160px;
     height: 48px;
-    background-color: #ef6c33;
+    background-color:  --secondary-color;
     position: fixed;
     top: 50%;
     right: -56px;
     padding: 10px 20px;
     color: white;
-    transform: rotate(90deg); /* 세로로 회전 */
-    transform-origin: center; /* 회전 중심을 설정 */
+    transform: rotate(90deg);
+    transform-origin: center; 
     text-align: center;
     z-index: 1000;
     text-decoration: none;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 얕은 그림자 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
   }
   /* 전체 네비게이션 스타일 */
   .navbar {
@@ -100,7 +101,7 @@
   }
 
   .menu li a:hover, .menu li a:hover span {
-    color: #ff6600; /* A&W의 주황색 톤 */
+    color: #ff6600; 
 }
   /* 햄버거 메뉴 버튼 스타일 */
   /* 메뉴 토글 숨김 */
@@ -148,16 +149,15 @@
     bottom: -8px;
   }
 
-  /* 체크박스가 선택된 상태에서 아이콘 변형 */
   .menu-checkbox:checked + .icon-menu-wrap span::before {
     transform: rotate(45deg);
-    background-color: #ff6218;
+    background-color: --primary-color;
     top: 0;
   }
 
   .menu-checkbox:checked + .icon-menu-wrap span::after {
     transform: rotate(-45deg);
-    background-color: #ff6218;
+    background-color: --primary-color;
     bottom: 0;
   }
 
@@ -208,7 +208,7 @@
   }
 
   .dropdown-menu ul li a:hover {
-    background-color: #ff6218; /* A&W 주황색 */
+    background-color: var(--primary-color); /* A&W 주황색 */
     color: white;
   }
 
@@ -230,7 +230,7 @@
 
   /* 배경 이미지 및 기본 오버레이 */
   .dropdown-menu ul li:nth-child(1) a {
-    background: url("./assets/nav/work_with_us.png") no-repeat center center;
+    background: url("../assets/nav/work_with_us.png") no-repeat center center;
     background-size: cover;
     height: 211px;
     overflow: hidden;
@@ -241,7 +241,7 @@
   }
 
   .dropdown-menu ul li:nth-child(2) a {
-    background: url("./assets/nav/FAQ.png") no-repeat center center;
+    background: url("../assets/nav/FAQ.png") no-repeat center center;
     background-size: cover;
     height: 211px;
     overflow: hidden;
@@ -252,7 +252,7 @@
   }
 
   .dropdown-menu ul li:nth-child(3) a {
-    background: url("./assets/nav/contact_us.jpg") no-repeat 30% 20%;
+    background: url("../assets/nav/contact_us.jpg") no-repeat 30% 20%;
     background-size: cover;
     height: 211px;
     overflow: hidden;
@@ -263,7 +263,7 @@
   }
 
   .dropdown-menu ul li:nth-child(4) a {
-    background: url("./assets/nav/gift-card.jpg") no-repeat center center;
+    background: url("../assets/nav/gift-card.jpg") no-repeat center center;
     background-size: 150%;
     height: 211px;
     overflow: hidden;
@@ -281,14 +281,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 102, 0, 0); /* 주황색 오버레이 초기 상태 */
+    background-color: rgba(255, 102, 0, 0); 
     transition: background-color 0.7s ease;
-    z-index: 1; /* 텍스트보다 아래에 표시 */
+    z-index: 1; 
   }
 
   /* hover 시 오버레이 색상 변화 */
   .dropdown-menu ul li a:hover::before {
-    background-color: rgba(255, 102, 0, 1); /* hover 시 주황색 오버레이 */
+    background-color: rgba(255, 102, 0, 1); 
   }
 
   /* 텍스트와 아이콘을 오버레이 위에 표시 */
@@ -328,16 +328,16 @@
   }
 
   .hero_section-img-conitner img {
-    width: 100vw; /* 화면 너비에 맞춤 */
-    height: 100vh; /* 화면 높이에 맞춤 */
-    object-fit: cover; /* 비율을 유지하며 화면을 꽉 채움 */
+    width: 100vw; 
+    height: 100vh; 
+    object-fit: cover; 
   }
 
   .bounce_arrow {
-    animation: bounce 2s infinite; /* 2초 동안 반복되는 바운스 애니메이션 */
+    animation: bounce 2s infinite; 
     width: 60px;
-    position: absolute; /* 절대 위치로 hero_section 안에 배치 */
-    left: 45%; /* 가로 중앙에 위치 */
+    position: absolute; 
+    left: 45%; 
     bottom: 20px;
   }
 
@@ -347,13 +347,13 @@
     50%,
     80%,
     100% {
-      transform: translateY(0); /* 초기 위치 */
+      transform: translateY(0); 
     }
     40% {
-      transform: translateY(-30px); /* 위로 20px 이동 */
+      transform: translateY(-30px); 
     }
     60% {
-      transform: translateY(-10px); /* 위로 10px 이동 */
+      transform: translateY(-10px); 
     }
   }
 
@@ -391,7 +391,7 @@
 
   .mobileapp-callout img {
     width: 75px;
-    height: 75px;
+    height: auto;
   }
   /* 앱 아이콘 스타일 */
 
@@ -399,7 +399,7 @@
   .mobileapp-copy h3 {
     font-size: 26px;
     font-weight: bold;
-    color: #ff6218;
+    color: var(--primary-color);
     text-align: left;
     line-height: 1.3;
   }
@@ -417,7 +417,7 @@
 
   .mobileapp-btn a {
     padding: 3px 13px;
-    background-color: #ff6218;
+    background-color: --primary-color;
     color: white;
     text-decoration: none;
     border-radius: 40px;
@@ -431,7 +431,7 @@
   }
 
   .order-btn:hover {
-    background-color: #e55b00;
+    background-color: --secondary-color;
   }
 
   /* footer */
