@@ -9,69 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <a href="#" class="work-with-us">Work with Us</a>
-    <nav class="navbar">
-      <hr style="border: 2px solid #ff6118" />
-      <div class="navbar-top">
-        <div class="find-aw">
-          <a href="#">Find an A&W</a>
-        </div>
-        <div class="language-switch">
-          <a href="#">En</a> | <a href="#">Fr</a>
-        </div>
-      </div>
-      <hr style="border: 0.5px solid #f0f0f0" />
-      <div class="navbar-bottom">
-        <div class="logo">
-          <img src="./assets/nav/logo.svg" />
-        </div>
-        <ul class="menu">
-          <li><a href="#"><span class="mobile-display-none">Our&nbsp;</span>Menu</a></li>
-          <li><a href="#"><span class="mobile-display-none">Our&nbsp; </span>Values</a></li>
-          <li><a href="#">Our App</a></li>
-        </ul>
-        <a class="mobile-display-none">More</a>
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
-        <label for="menu-toggle" class="icon-menu-wrap">
-          <span></span>
-        </label>
-
-        <!-- 드롭다운 메뉴 -->
-        <div class="dropdown-menu">
-          <ul>
-            <li>
-              <a href="#">
-                <span>Work with Us</span>
-                <i class="dropdown_arrow"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span>FAQ</span>
-                <i class="dropdown_arrow"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span>Contact Us</span>
-                <i class="dropdown_arrow"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span>Gift Card</span>
-                <i class="dropdown_arrow"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar-container"></div>
 
     <section>
       <div class="hero_section">
@@ -136,65 +79,8 @@
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="social-icons">
-        <a href="https://www.facebook.com" class="icon-circle" target="_blank">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="https://www.twitter.com" class="icon-circle" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://www.youtube.com" class="icon-circle" target="_blank">
-          <i class="fab fa-youtube"></i>
-        </a>
-
-        <a href="https://www.instagram.com" class="icon-circle" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-
-      <div class="footer-language-selector">
-        <hr />
-        <i
-          class="fa-brands fa-canadian-maple-leaf"
-        ></i>
-        <span>En | Fr</span>
-        <hr />
-      </div>
-
-      <div class="footer-links">
-        <a href="#">Our Menu</a>
-        <a href="#">Our Values</a>
-        <a href="#">Our App</a>
-        <a href="#">Locations</a>
-        <span class="mobile-line-break desktop-display-none"></span>
-        <a href="#">FAQ</a>
-        <a href="#">Gift Cards</a>
-        <a href="#">Work with Us</a>
-        <span class="mobile-line-break desktop-display-none"></span>
-        <span class="desktop-line-break mobile-display-none"></span>
-        <a href="#">Franchise Info</a>
-        <a href="#">Our Company</a>
-        <a href="#">Operator Login</a>
-        <span class="mobile-line-break desktop-display-none"></span>
-        <a href="#">A&W Income Fund</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Terms</a>
-        <a href="#">Privacy Policy</a>
-      </div>
-
-      <div class="footer-last-paragraph">
-        <p>©2024 A&W Trade Marks Limited Partnership</p>
-        <p>
-          ™TORONTO BLUE JAYS, bird head design, split type font, and all related
-          marks and designs are trademarks and/or copyright of Rogers Blue Jays
-          Baseball Partnership (“RBJBP”). © 2024 RBJBP.<br>
-          * Trademark of Frito-Lay North America, Inc. Used under licence The
-          trademarks that appear are the property of their respective trademark
-          owners.
-        </p>
-      </div>
-    </footer>
+    <div id="footer-container"></div>
+   
+    <script src="app.js"></script>
   </body>
 </html>
