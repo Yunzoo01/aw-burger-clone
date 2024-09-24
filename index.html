@@ -1,11 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <!-- Font Awesome 라이브러리 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a href="#" class="work-with-us">Work with Us</a>
+    <nav class="navbar">
+      <hr style="border: 2px solid #ff6118" />
+      <div class="navbar-top">
+        <div class="find-aw">
+          <a href="#">Find an A&W</a>
+        </div>
+        <div class="language-switch">
+          <a href="#">En</a> | <a href="#">Fr</a>
+        </div>
+      </div>
+      <hr style="border: 0.5px solid #f0f0f0" />
+      <div class="navbar-bottom">
+        <div class="logo">
+          <img src="./assets/nav/logo.svg" />
+        </div>
+        <ul class="menu">
+          <li><a href="#"><span class="mobile-display-none">Our&nbsp;</span>Menu</a></li>
+          <li><a href="#"><span class="mobile-display-none">Our&nbsp; </span>Values</a></li>
+          <li><a href="#">Our App</a></li>
+        </ul>
+        <a class="mobile-display-none">More</a>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <label for="menu-toggle" class="icon-menu-wrap">
+          <span></span>
+        </label>
+
+        <!-- 드롭다운 메뉴 -->
+        <div class="dropdown-menu">
+          <ul>
+            <li>
+              <a href="#">
+                <span>Work with Us</span>
+                <i class="dropdown_arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>FAQ</span>
+                <i class="dropdown_arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contact Us</span>
+                <i class="dropdown_arrow"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Gift Card</span>
+                <i class="dropdown_arrow"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="hero_section">
+        <div class="hero-section-img-container">
+        <img src="assets/home/hero-mobile.jpg" style="width: 100vw" class="desktop-display-none"/>
+        <img src="assets/home/hero-desktop.jpg" style="width: 100vw" class="mobile-display-none"/>
+      </div>
+
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAABoCAYAAAAdHLWhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NEIyNDZFNUVDMjIwMTFFODlDODM5OUEyMUQzQTE5QkQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NEIyNDZFNURDMjIwMTFFODlDODM5OUEyMUQzQTE5QkQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QzdDODEwRDhCMkM2MTFFNkJDMzJFQzA5NTI4QkQ5NTQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QzdDODEwRDlCMkM2MTFFNkJDMzJFQzA5NTI4QkQ5NTQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6mZmHWAAAOHElEQVR42uydD3AU1R3Hf7t7e7chl0tyBAIKQY1gERRqEYu2ohhF6WixTtpA/QMOgrQzWpmOQ53OqNOpN60K1rY6nWpTkMlQ/6B0gE4R0LGOglL5YzVApJJEEzEhf64J92d3b/vesoTN3u7e27vdu71kfzM7F0Ju973vZ3/v/d57u78HkiSBZ+412pPA3eYrwjJTOX5f8gDlBwaVJRiqmKD5igAIZZMHUQYwJJ1zSh4gcggkP1v1IInQy6TRDMgICmXyOzsAqX+WNMAonf8rqFf5XAhG/UnZAMoIjPbTlV7lcwkYs58pApAkgDLB0f6bMoCbV1A5AyIZ6FLICMFQBmCMIGbjQZnAaH9vCArVXRpetSLzoBzAUKpB9NDvNm3adN6cOXMuDYfDUzmOm+r3+2sZhplA03QYXYpDRxBplkR/O5hKpaLoGEDHqWQyeTwej7f09PS07N+//9M777yzQwdEygCSIShV/ZzzplynevD39Q4dsRnlwDcFiw4/OgLo4NAxBh2l6AiiowwdIXRURCKRi1pbW1cNDg6+LIpiu2ST4XPhc+Jz42vgaynXLFPKUKqUiVPK6FfK7FPVg9bx7uIApAFDE4LBApUvWrRoAhJuJbrj38TeIDlvyVgs9ia+Jr42LoNSFhJQtAaUuwHpeI0WzlkwJVowGzdunN7f3/8MapJ6pAIZvjYuAy6LDqgSFSgzSJQrARk0aVqvKVHuyLNNWTnqVy6NRqMvoHMkJPdYYmBg4AVcNg2oMUodjLzJfkh2ACKAo/YaGcyyZcsmoE77CXTXxiSXGi4bKmMEl1UBVabxJuch2bAeZAZH3dcMNWdHjx5dLAjCCalIDJe1ubn5BzreZNTk2QcpR0CW4OA7UWnOUlLxWQo1ey8q3pQ/SDkAMoKj7m+GmrSdO3fO4Xn+U6nIDdcB10WnyTvbL9kLyQZAGeEcOXLkh3jgKI0Qw3XBdbIIKa+AzJq1YXA6Ojp+hm88aeQZj+tmAIm1DVIWgEjhVHR1dT1WpP0NsTOhOj6qzEQ4AonOAo7evBqtGZzSqOAPVFVVPeroNIgLFhpRHR/DdVXXXaOJ1dn3nAAZBQnD4HR2dt6HCw6jxHBdcZ11IOU1SDAKCtShNB7jNOChgzT6TDh27NhSpU9Sh+C5BQ2EgDL1O/I4Z/v27XNQhNMvjVLDdVdC8LPjpNz7oywBaYOC0MqVKyeOhHGODeOkZqyFAkkbNFgGhFcFIcOqIGUwMFXPVtNolL2+tLR0OXgGg4ODG4LB4IPKIqCofKZ0FgUzLvbRdgQGqN9ZgOAs89CcMaTF3VgTOwIGmgCI0TK1fGHkzmNqa2vXj/Bw2nKEizXB2piE3ERhd6YmTn0SWtMPyZ89PT1rKysr13pM0q23t/c34XA4omrmRFUzlyJp5kiaOKOHPOjGxsaJFRUVD3oo9A1p8wDWyGDilKi5M/OgjN7T39//RCgU+omHwtii0ehz5eXlj2TrRXS23rNu3bpxZWVl93gIzA1rhLXK1ouMPEgvIFCH1QxqXx9FLvyQhyCz9fX1PY366V8p3mMUdut6EakHDTuWLFnCIbf1vIfQkFbLb7vtNg7Mn6C17EF6K6byZ2tra0NNTc2fPOnJra2tbdWUKVM2G/RF2sFrVlHcUFM3fvz4ek9ya1ZdXV0PWTxDR5tEb6B3okgkEuY4br4nuTULBALzsXZm2uoBowmit2EnW7p0aR2cmfjzzJqxinaUib5plunthrSQsKqqqs7pmqQG+yDV9zVI8dNAcaXAVE0CKlBi2/klPgHCqS8BBqNIARbo8ARgysY6TkjR7m86UbLhTALp6ydD1FHz9m3HaoACFqHjM+A/3AbUiYNADfSBVFYJ/IzrwT/nFmAqxud8CfF/PZA8sAvgP3uA6u0EiuVAuGAW+ObeCuyUGaiGzqWOQNrNA4uTpj4rIXZTU9P5NE1PdgZOCvj2IyBs/wP4P9kDTCw69F9C28eQ7G4D9obl4Bs3KQc4pyC5ewP49r4GbNfn5zz2vx9AousESHUrwH/JXMcAIe0mYQ1RU9euo69EAsh0hvWqq66a5VizdjoKwluboGT/G+mF7OsE+p2XIIELtmg1MKGqLJrNKCTfbgL2rb+Cb6B7uHCoySs5sANi+O8mXQJ0abljkBQN2w0cIu3VS9IwW/6sqKiY7lTTJn75GbCHd+LX8vTvvsQAsO+/Ask9myAVG7B2+kQMEu+/Dr63N6TBUXsw+/kB4A+9JZfHKVM0JH7CxyzMTluzQKFirSN8cKfdcQzoWL+pOFhc9r3NkHjvNfSdJOG5k5A4uBvYnc8D2/+V+Z2IboLU8X87HW7XZtLZ6kD1nEA+X41T/Q8kY0T9pq/nC2D2NELio50giXzGv+db9gO9bR34er88cx0zQCIa3CcGHAWENLTUh1uaSWAYZrwjpcaRk58zbN7SmqKvjwO941lIfvqeqej854dBeu0J8H/VgjoXMfOpGQagJOQoIKRhda4zCWZRSNgRPqwffJNngBgaRwSJQmL7O5pB2voU8McP6sNBEaH4agQCbYeI4MiBRHAsUBdfSXajZB/JVdrtQeeEoaiAUx7EnHcxCFf/CMRSwnsAic6dOADiG08C3/rJ8HC6qx34bc9C4Ni7xHAknx+Nh64A/8xrHfUgnC7ASUBBx+6skiD4r1sKycsXQipQStx3cUf+Bfz2P8pQZDjRbkjueB64w/+UPY3UkhddCb6bVqAQO+Q0IEsauiodGZ5uwSIlUYceOPoumcAY0uF/QGLs+fJsgHBoD/g/3AK0HHSQWWLy5QA3rwb2wstdN4FnCZAkSQNOepE8ozj5G5BaeD8k0cA10HqAzPtQmM7ufRWEE4fkGQL1LERGz5kwDaSbVgE3a0FeBMcaOgko4TQgeaxw2XyID/RCctsz4D/ZQjRw9EVPyocVE8bWgHj9ciiZ9/28eQTSMO5YH4QTPeSrIty8xSDW3QdCeLIjUZUQrAL+6gYIXHOHoxOkOhr22g1oaDlWFMWv89n+cki85DUNspi2isSVAT+vHvzzl8jBST4NaXgSTJa4c/IgQRDa8lkZCg1eA9cuAf5bt4IUGGNPE0MzEP/m98B33Y+BqazOe6ePNGzP1YP0shDKn4lE4njeI7uK8eC7/m6IzVqExM096EzMWADsgnuArb6gIFGZSkNDnbNp4uTPvr6+5rzXCPU/7PkXA1t3L8Rn5raYm5g6D6gb7wP2gpl57XfUpmhI9OqJHiDTL+7bt+9QQWqFxGQvvAyYG1dAYtp3soNTMwukW34K/mlzUa2Zgo1rTDTU1V7vuTijlGLygTq5j/HKYCEqh2evEx+/A9Tf16Mx0keWxjqpxQ9DYPYNQLGBgsFBEdwXDMNcBueeMFU/ZaobOJD6+dCX4/H4+4WqIMWwEJh5LUg33y+LTjrWSS1cjeDUFRQONqTdXisRHAmgtKSr3d3duwpZScqHIF2xUBZdqJpi+rd8xUTgb1gBgXm3yzPmhTak3Zugn8jWMiDtF4eoNzU1YUB8wSEh0fm6VYYDWT5UDcJ37wJuwV2ugIOLpGgnmeibXleCZ7PT+iHkqq8EAoG6QtcY90nx3S8B9cHr4O84ChQfB0Aw+MpJIMxdDByenc7zQNQkvN7FcVy9lf5HnsKy0v8oJ6NOnjz5Sk1NTcEB4T6p5KZ7IXHeVEgc3g0Q7QIIjgV6+jVQMnuB/P9uMawZCZB09fUnIs96j15GkbL6+voJhUz+WoQJLk5hzeBMwiW9DCSGy9/eC1z5GZyur6ysfBxsfIFLMmnm5KOxsfE5BPe0J3/GFuo01gqMM9qD2eRAri8RR0Kh0GoPg7FFo9Hny8vLfwEOvEQsmQQK8s9btmx5FgGOeRgMvSe2devW3+tpB/obdljyICIv6unpeQS1rw97ONIN9dNPhsPhX4PDiSzMvCi1du3aZ0RRbPVwpM27tSJt1usAIZ7mMQuz9UJuGvTzxOEkfreP8NykliPr5ubmO+Bccj9t3jjilGR2piNbV1paeq/nO3I6sr8Eg8E1kKd0ZGY7VA257po1a34pCMLR0Q4Ha4C1MGjWLMEhbeK0zZxhSkycDnK0p8TctWvXlVCAlJhGkNKSyuLEql5S2fwnlTWCxGrn6XABOzs7fz7aggZcZziXhV4Nh4Uckpvn8uSEXl8kHxMnTvxzd3f346Ol30F1fQzX2SQYyPqdSjoLKHqBQ0oLady4cb9TIEkjmA1eYX4c11UHjtFEqDU98rC5xkMjtE8ScN3AhZtrZAoavO1pXLA9jd7A1dvgyWUbPJlB0t0iDWdkx9uMFfMWaaqs8q7fIi0rSPjOwxv2iaJYNJsM4rIW6yaDuW7T+Vu3b9PZ29v7VFFv0yllv9Gt7E14M1ml2XPbRrcvjpiNbiVvq2j3bxUteZutu3+z9QzexBCCKlMEqohEIhch4VYNDg6+jDrqdhs7/XZ8TnxufA04s0lgSLk2CRjGUa+xuGCXNWBq+InNdlLRO2jt32zevHnS7Nmzp4fD4akcx031+/21OPcNTdNj0aVK0DFGKdNp/MAGfmAQvxOaTCaPI49sQUFJy8GDB5sbGhq+0JknM1u7yfQ2nFSUgGwABSa/A52fzeYPzRYfIRsw2BspytldeXIGZHG8BISgwASK1W0vJYJPMxhGk5x5mQTOZyoYSSOo9s5Wp4QEQji5eBBkAFFQMIUARAIKdKBlCyYbUK4BU0hAehWmNMJQOp7lBKBMnX3B17Lcku0qG6+SbLgxjM7jmkVGV6Uj0xGGMhGUyvHcrgTidkAkwtntQa42HxSfjeRnHNKMBs88QJ7lOJPgmXvt/wIMAPkpEVibkny/AAAAAElFTkSuQmCC"
+          class="bounce_arrow"
+          alt="arrow button"
+        />
+      </div>
+      <div class="home-promotion-container">
+        <a href="/en/our-menu/burgers/ruffles-crunch-buddy-burger">
+          <img
+            src="https://web.aw.ca/static/media/ruffles-crunch-en.784b2205.jpg"
+        /></a>
+        <a href="/en/our-menu/kidspack">
+          <img
+            src="https://web.aw.ca/static/media/kids-pack-2023-en.a370ed4f.jpg"
+        /></a>
+      </div>
+
+      <div class="blockwrap">
+        <div class="mobile-order-banner">
+          <div class="mobileapp-callout">
+            <img
+              src="	https://web.aw.ca/static/media/icon-en.c28f6fec.png"
+            />
+            <div class="mobileapp-copy">
+              <h3>Hungry for mobile&nbsp;ordering?</h3>
+              <p>Try the new A&amp;W&nbsp;app.</p>
+            </div>
+          </div>
+          <div class="mobileapp-btn">
+            <a title="Download the app" href="/en/order">
+              Download the app&nbsp;
+              <i style="margin-top: 12px; margin-left: 8px">
+                <svg
+                  fill="#FFFFFF"
+                  height="24px"
+                  width="24px"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 490 490"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M245,0C109.7,0,0,109.7,0,245s109.7,245,245,245s245-109.7,245-245S380.3,0,245,0z M315,287.7l-90.5,90.5l-42.7-42.7
+                            l90.5-90.5l-90.5-90.5l42.7-42.7l90.5,90.5l42.7,42.7L315,287.7z"
+                    />
+                  </g>
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" class="icon-circle" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.twitter.com" class="icon-circle" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com" class="icon-circle" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <a href="https://www.instagram.com" class="icon-circle" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="footer-language-selector">
+        <hr />
+        <i
+          class="fa-brands fa-canadian-maple-leaf"
+        ></i>
+        <span>En | Fr</span>
+        <hr />
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Our Menu</a>
+        <a href="#">Our Values</a>
+        <a href="#">Our App</a>
+        <a href="#">Locations</a>
+        <span class="mobile-line-break desktop-display-none"></span>
+        <a href="#">FAQ</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Work with Us</a>
+        <span class="mobile-line-break desktop-display-none"></span>
+        <span class="desktop-line-break mobile-display-none"></span>
+        <a href="#">Franchise Info</a>
+        <a href="#">Our Company</a>
+        <a href="#">Operator Login</a>
+        <span class="mobile-line-break desktop-display-none"></span>
+        <a href="#">A&W Income Fund</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="footer-last-paragraph">
+        <p>©2024 A&W Trade Marks Limited Partnership</p>
+        <p>
+          ™TORONTO BLUE JAYS, bird head design, split type font, and all related
+          marks and designs are trademarks and/or copyright of Rogers Blue Jays
+          Baseball Partnership (“RBJBP”). © 2024 RBJBP.<br>
+          * Trademark of Frito-Lay North America, Inc. Used under licence The
+          trademarks that appear are the property of their respective trademark
+          owners.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
