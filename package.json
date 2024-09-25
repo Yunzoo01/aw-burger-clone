@@ -1,11 +1,29 @@
 {
   
     "scripts": {
+  
+      
     "build:css": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/styles.css"
-  },
   
+    },
   
-  "devDependencies": {
+    "devDependencies": {
+  
+      
     "tailwindcss": "^3.4.13"
-  }
+  
+    },
+  
+    "dependencies": {
+  
+      
+    "axios": "^1.7.7",
+  
+      
+    "cheerio": "^1.0.0",
+  
+      
+    "puppeteer": "^23.4.0"
+  
+    }
 }
