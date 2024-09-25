@@ -1,5 +1,12 @@
+/* styles.css */
+
 @import url('./styles/desktop.css');
 @import url('./styles/mobile.css');
+@import url('./styles/navbar.css');
+@import url('./styles/footer.css');
+@import url('./styles/contact-us.css');
+@import url('./styles/styles.css');
+
 
 * {
     margin: 0;

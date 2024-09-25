@@ -1,0 +1,11 @@
+{
+  
+    "scripts": {
+    "build:css": "npx tailwindcss -i ./styles/tailwind.css -o ./styles/styles.css"
+  },
+  
+  
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}
