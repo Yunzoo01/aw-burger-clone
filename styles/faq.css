@@ -1,0 +1,76 @@
+/* 아코디언 기본 스타일 */
+/* desktop */
+@media (min-width:850px){
+.faq-item {
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  width: 80%;
+}
+}
+/* mobile */
+@media (max-width:849px){
+  .faq-item {
+    margin-bottom: 1rem;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+  }
+  }
+
+
+.faq-item h3 {
+  font-size: 1.25rem; /* 제목 크기 */
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.faq-item input {
+  display: none; /* 체크박스 숨기기 */
+}
+
+.faq-item label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.125rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  
+}
+
+.faq-item h3:hover {
+  color: #ff6600; /* 호버 시 텍스트 색 변경 */
+}
+
+.faq-item .icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq-item .faq-answer {
+  display: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 체크박스가 선택되었을 때 답변 보이기 */
+.faq-item input:checked ~ .faq-answer {
+  display: block;
+}
+
+/* 체크박스가 선택되었을 때 질문 텍스트 색상 변경 */
+.faq-item input:checked + label {
+  color: #ff6600; /* 선택되었을 때 텍스트 색 변경 */
+}
+
+/* 체크박스가 선택되었을 때 아이콘 회전 */
+.faq-item input:checked + label .icon {
+  transform: rotate(45deg); /* + 기호를 X로 바꾸기 위한 회전 */
+}

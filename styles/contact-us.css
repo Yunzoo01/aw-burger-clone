@@ -19,9 +19,7 @@
     font-weight: 500;
     font-size: 3vw;
   }
-  input[type="text"],
-  input[type="email"],
-  textarea {
+  .input-field {
     width: 100%;
     padding: 10px !important;
     margin-bottom: 15px;
@@ -60,29 +58,24 @@
     font-weight: 500;
     font-size: 20px;
   }
-  input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px !important;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  font-size: 20px !important;
-  border-radius: 5px;
-}
+  .input-field {
+    width: 100%;
+    padding: 10px !important;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 20px !important;
+    border-radius: 5px;
+  }
 }
 
+/* 공통 스타일 */
 .feedback {
   padding: 3%;
   max-width: 950px;
   margin: 0 auto;
 }
 
-
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
+.input-field:focus {
   border-color: var(--secondary-color);
   outline: none;
 }

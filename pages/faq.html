@@ -1,11 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    faq
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&amp;W</title>
+    <!-- Font Awesome 라이브러리 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Tailwind CDN 연결 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+
+  <body>
+    <div id="navbar-container"></div>
+
+    <div class="bg-custom-primary text-center py-16">
+      <h1 class="text-5xl font-bold text-white mb-6">We're Here to Help</h1>
+      <div class="max-w-lg mx-auto relative mt-10">
+        <input
+          type="text"
+          class="w-full p-4 rounded-full text-lg h-12"
+          placeholder="Ask a question"
+        />
+        <button class="absolute right-2 bg-tranperate p-4 rounded-full">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="desktop:w-3/4 w-full mx-auto bg-white p-5 rounded-lg shadow-md mt-10"
+    >
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">
+        POPULAR QUESTIONS
+      </h2>
+
+      <!-- 첫 번째 FAQ 항목 -->
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq1" class="hidden peer" />
+        <label
+          for="faq1"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>Why did you change your cheese?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            We’re committed to sourcing simple, great-tasting ingredients that
+            are crafted with care. That’s why we’ve completely eliminated
+            processed cheese from our menu. At A&W we only serve real cheese
+            made without artificial flavours, colours or preservatives..
+          </p>
+        </div>
+      </div>
+
+      <!-- 두 번째 FAQ 항목 -->
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq2" class="hidden peer" />
+        <label
+          for="faq2"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>What types of cheese do you serve?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            We serve three different types of cheese: real cheddar cheese, real
+            mozzarella cheese and real cheese curds. Most of our burgers and
+            breakfast sandwiches are served with real cheddar cheese. But on
+            other menu items, we also serve mozzarella cheese (served on our
+            Mozza Burger®) and cheese curds (served on our Poutine).
+          </p>
+        </div>
+      </div>
+
+      <!-- 세 번째 FAQ 항목 -->
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq3" class="hidden peer" />
+        <label
+          for="faq3"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>Where is your cheddar cheese made?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            We are proud to support Canadian dairy farmers and work with amazing
+            cheesemakers to serve real, natural cheeses in all our restaurants.
+          </p>
+        </div>
+      </div>
+
+      <!-- 네 번째 FAQ 항목 -->
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq4" class="hidden peer" />
+        <label
+          for="faq4"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>How is real cheese different from processed cheese?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            Real cheese is made with simple ingredients like milk, starter
+            culture, salt and microbial enzymes. It’s made without any
+            artificial flavours, colours or preservatives. Our real cheddar
+            cheese is much lower in sodium than typical processed cheese and
+            it’s naturally aged to develop the perfect medium cheddar flavour
+            our guests know and love.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq5" class="hidden peer" />
+        <label
+          for="faq5"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>How will real cheese affect people with dairy sensitivities?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            Real cheese is made with milk and milk ingredients. So, it's
+            important that people with dairy sensitivities take caution when
+            eating. Browse through our menu page for more information on
+            ingredients and allergens.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq6" class="hidden peer" />
+        <label
+          for="faq6"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>When did you switch to paper straws?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            As of December 31, 2018, we completely eliminated plastic straws
+            from all of our restaurants. We now only carry paper straws. We’re
+            the first fast-food restaurant in all of North America to do this
+            and we’re pretty excited about it. We truly believe that small
+            changes like this can have a big impact on our planet.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq7" class="hidden peer" />
+        <label
+          for="faq7"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>Why isn’t A&W replacing other plastic packaging?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            Replacing straws was one big, exciting step in our waste reduction
+            plan, but we know there's more to do. Finding practical ways to
+            reduce waste is one of our top priorities. Out of all the packaging
+            in our restaurants, plastic straws were the most problematic. Unlike
+            other recyclable plastics, like takeout cup lids, straws are not
+            accepted in most waste processing facilities.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq8" class="hidden peer" />
+        <label
+          for="faq8"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>How do your paper straws compare to plastic straws?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            We worked closely with our supplier to ensure that A&W's paper
+            straws would provide the same great sipping experience as plastic
+            straws. Believe it or not, paper straws have been around since the
+            1880s, but with recent advancements in cutting-edge straw
+            technology, their quality has soared to new heights. Our paper
+            straws will last for about 2–3 hours in a drink and will biodegrade
+            in about 3–6 months.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq9" class="hidden peer" />
+        <label
+          for="faq9"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>Are your paper straws compostable everywhere in Canada?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            A&W’s paper straws are 100% biodegradable, compostable and
+            sustainably sourced. They’re accepted wherever compostable
+            facilities exist and can even be placed in organic waste bins.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mb-4 border-b border-gray-300">
+        <input type="checkbox" id="faq10" class="hidden peer" />
+        <label
+          for="faq10"
+          class="block py-4 text-lg font-bold text-gray-800 cursor-pointer flex justify-between items-center"
+        >
+          <h3>How many plastic straws escape landfills?</h3>
+          <span
+            class="icon peer-checked:rotate-45 transition-transform duration-300"
+            >+</span
+          >
+        </label>
+        <div
+          class="faq-answer mt-2 mb-4 px-4 py-2 text-gray-600 hidden peer-checked:block"
+        >
+          <p>
+            By introducing paper straws, we’re able to eliminate 82 million
+            plastic straws from landfills every year. All of our straws are 100%
+            biodegradable.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="blockwrap">
+      <div class="mobile-order-banner">
+        <div class="mobileapp-callout">
+          <img src="	https://web.aw.ca/static/media/icon-en.c28f6fec.png" />
+          <div class="mobileapp-copy">
+            <h3>Hungry for mobile&nbsp;ordering?</h3>
+            <p>Try the new A&amp;W&nbsp;app.</p>
+          </div>
+        </div>
+        <div class="mobileapp-btn">
+          <a title="Download the app" href="order">
+            Download the app&nbsp;
+            <i style="margin-top: 6; margin-left: 8px">
+              <svg
+                fill="#FFFFFF"
+                height="24px"
+                width="24px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 490 490"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M245,0C109.7,0,0,109.7,0,245s109.7,245,245,245s245-109.7,245-245S380.3,0,245,0z M315,287.7l-90.5,90.5l-42.7-42.7
+                            l90.5-90.5l-90.5-90.5l42.7-42.7l90.5,90.5l42.7,42.7L315,287.7z"
+                  />
+                </g>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+  </body>
+  <script src="../app.js"></script>
 </html>

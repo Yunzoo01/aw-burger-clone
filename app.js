@@ -98,14 +98,3 @@ function renderMenuItems(category) {
 }
 
 
-// 좌측으로 스크롤
-function scrollLeft() {
-  const container = document.querySelector('.grid-scroll-container');
-  container.scrollLeft -= 300; // 300px씩 좌측으로 스크롤
-}
-
-// 우측으로 스크롤
-function scrollRight() {
-  const container = document.querySelector('.grid-scroll-container');
-  container.scrollLeft += 300; // 300px씩 우측으로 스크롤
-}
