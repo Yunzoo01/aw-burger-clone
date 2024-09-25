@@ -9,22 +9,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-   <!-- Tailwind CDN 연결 -->
-   <link
-   href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-   rel="stylesheet"
- />
+    <!-- Tailwind CDN 연결 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <div id="navbar-container"></div>
 
-    <section class="bg-custom-primary" style="height: 38.85vw;">
-      <h2 class="text-white" style="font-size: 8.6vw;">Contact Us</h2>
+    <section class="flex justify-center flex-col items-center">
+      <div class="bg-custom-primary contact-us">
+        <h2 class="text-white">Contact Us</h2>
+        <p class="text-white" >
+          We value your feedback. If you have any comments about our food,
+          operations or anything related to A&amp;W, please share them with us
+          below.
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="../assets/nav/logo.svg"
+          style="width: 50vw; left: 50%; margin-bottom: 20px; max-width: 600px;"
+        />
+      </div>
+
+      <hr style="border: 1.5px solid #f0f0f0; width: 90vw" />
     </section>
-    
-    <section class="contact-us">
-      
+
+    <section class="feedback">
       <form action="/submit_form" method="POST">
         <!-- Name Field -->
         <label for="name">Name</label>
@@ -61,12 +76,12 @@
         ></textarea>
 
         <!-- Submit Button -->
-        <button type="submit">Submit</button>
+        <button class="button-submit">Submit</button>
       </form>
     </section>
 
     <div id="footer-container"></div>
-   
+
     <script src="../app.js"></script>
   </body>
 </html>

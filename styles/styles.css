@@ -598,6 +598,10 @@ video {
   display: none;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
@@ -610,6 +614,14 @@ video {
   resize: both;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .border {
   border-width: 1px;
 }
@@ -617,6 +629,14 @@ video {
 .bg-custom-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(255 98 24 / var(--tw-bg-opacity));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-white {

@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+     
+      padding: {
+        '10p': '10%', // padding 커스텀
+      },
       colors: {
         'custom-primary': '#ff6218', // 사용자 정의 색상
         
