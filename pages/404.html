@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>404 Page Not Found</title>
+     <!-- Tailwind CDN 연결 -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+     rel="stylesheet"
+   />
+   <link rel="stylesheet" href="../main.css" />
 </head>
-<body>
-    <div class="container">
-      <h1>404</h1>
-      <p>Sorry, the page you are looking for does not exist.</p>
-      <a href="/">Go back to Home</a>
-    </div>
-  </body>
+<body class="h-screen flex items-center justify-center">
+  <div class="text-center">
+    <!-- 이미지 -->
+    <img
+    class="mx-auto mb-8" 
+    src="../assets/404/404_01-min.webp" 
+    alt="404 Not Found" 
+    style="width: 550px;"
+    />
+    <!-- 텍스트 -->
+    <strong class="text-2xl text-gray-700 mt-4">Sorry, the page you are looking for does not exist.</strong>
+    <br>
+    <!-- 홈으로 돌아가기 버튼 -->
+     <em>
+    <a
+      href="/"
+      class="mt-6 inline-block bg-blue-100 text-black font-semibold py-3 px-6 rounded-full shadow hover:bg-blue-300 transition duration-300"
+    >
+      Go back to Home
+    </a>
+  </em>
+  </div>
+
+    <script src="../app.js"></script>
+</body>
 </html>
