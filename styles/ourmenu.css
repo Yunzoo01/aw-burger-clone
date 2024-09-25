@@ -1,21 +1,161 @@
-.item {
-    display: block;
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-image: url('https://web.aw.ca/i/items/?i=ruffles-crunch-buddy-burger&d=ruffles-crunch-buddy-burger&cat=burgers&lang=ruffles-crunch-buddy-burger-en');
-  }
+@media (min-width: 850px) {
+.our-menu-title {
+  height: 165px;
+  background-color: var(--secondary-color);
+  padding: 42px 0px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .item-name {
-    position: relative;
-    top: 80%;
-    text-align: center;
-    font-size: 1.5rem;
-    color: white; /* 배경 이미지와 대비되는 색상 */
-  }
+.our-menu-title h1 {
+  color: #ffffff;
+  font-size: 41px;
+  font-weight: 800;
+}
 
-  .item:hover {
-    opacity: 0.8; /* Hover 시 시각적 효과 */
+.our-menu-title p {
+  color: #ffffff;
+  font-size: 19px;
+}
+
+/* 필터 버튼 컨테이너 */
+.filter-buttons-container {
+  background-color: var(--secondary-color);
+  height: 80px;
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+/* 필터 버튼들 */
+.filter-wrapper {
+  background-color: #ffffff;
+  width: 700px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center; /* 필터 버튼들 가로 중앙 정렬 */
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 30px;
+  justify-self: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.filter-buttons button:hover {
+  color: var(--secondary-color); /* 텍스트 색 변경 */
+}
+
+/* 가로 스크롤 가능한 컨테이너 */
+.grid-scroll-container {
+  position: relative;
+  padding: 20px;
+  max-width: 100%; /* 그리드 전체 너비를 제한 */
+}
+
+/* 그리드 컨테이너 */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 최대 4열 */
+  gap: 20px;
+  padding: 20px;
+}
+
+
+}
+
+@media (max-width: 849px) {
+  .our-menu-title {
+    height: 165px;
+    background-color: var(--secondary-color);
+    padding: 42px 0px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   
+  .our-menu-title h1 {
+    color: #ffffff;
+    font-size: 7vw;
+    font-weight: 700;
+  }
+  
+  .our-menu-title p {
+    color: #ffffff;
+    font-size: 2vw;
+  }
+  
+  /* 필터 버튼 컨테이너 */
+  .filter-buttons-container {
+    background-color: var(--secondary-color);
+    height: 80px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+  }
+  
+  /* 필터 버튼들 */
+  .filter-wrapper {
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; /* 필터 버튼들 가로 중앙 정렬 */
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 1.5vw 5vw;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    gap: 20px;
+    justify-self: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2vw;
+  }
+  
+  .filter-buttons button:hover {
+    color: var(--secondary-color); /* 텍스트 색 변경 */
+  }
+  
+  /* 가로 스크롤 가능한 컨테이너 */
+  .grid-scroll-container {
+    position: relative;
+    padding: 20px;
+    max-width: 100%; /* 그리드 전체 너비를 제한 */
+  }
+  
+  /* 그리드 컨테이너 */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* 최대 4열 */
+    gap: 20px;
+    padding: 20px;
+  }
+}
+.grid-item {
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  position: relative; /* Learn more 버튼 위치를 조정하기 위해 사용 */
+}
+
+.grid-item img {
+  width: 100%;
+  object-fit: cover; /* 이미지가 컨테이너에 맞게 자름 */
+  border-radius: 10px;
+}
+
+.grid-item h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
