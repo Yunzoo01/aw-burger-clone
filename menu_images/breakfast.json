@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Bacon & Egger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=bacon-egger&lang=bacon-egger-en",
+    "description": "A classic bacon and egg sandwich."
+  },
+  {
+    "name": "Sausage & Egger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=sausage-egger&lang=sausage-egger-en",
+    "description": "A sausage and egg breakfast sandwich."
+  },
+  {
+    "name": "Cheese & Egger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=cheese-egger&lang=cheese-egger-en",
+    "description": "A breakfast sandwich with cheese and egg."
+  },
+  {
+    "name": "Sausage & Cheddar",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=sausage-cheddar&lang=sausage-cheddar-en",
+    "description": "A savory sausage and cheddar cheese sandwich."
+  },
+  {
+    "name": "Classic Bacon & Eggs",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=classic-bacon-eggs&lang=classic-bacon-eggs-en",
+    "description": "Classic bacon with scrambled eggs."
+  },
+  {
+    "name": "All Canadian Special",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=all-canadian-special&lang=all-canadian-special-en",
+    "description": "A hearty all-Canadian breakfast special."
+  },
+  {
+    "name": "Breakfast Wrap",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=breakfast-wrap&lang=breakfast-wrap-en",
+    "description": "A convenient breakfast wrap filled with tasty ingredients."
+  },
+  {
+    "name": "Pancakes with Syrup",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=pancakes-with-syrup&lang=pancakes-with-syrup-en",
+    "description": "Fluffy pancakes served with syrup."
+  },
+  {
+    "name": "Hash Brown",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=hash-brown&lang=hash-brown-en",
+    "description": "Crispy hash browns to complement your breakfast."
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Ruffles Crunch Buddy Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=ruffles-crunch-buddy-burger&lang=ruffles-crunch-buddy-burger-en",
+    "description": "Crispy buddy burger with ruffles."
+  },
+  {
+    "name": "Ruffles Crunch Teen Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=ruffles-crunch-teen-burger&lang=ruffles-crunch-teen-burger-en",
+    "description": "Crunchy teen burger with ruffles."
+  },
+  {
+    "name": "Spicy Piri Piri Beef Buddy",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=spicy-piri-piri-beef-buddy&lang=spicy-piri-piri-beef-buddy-en",
+    "description": "Spicy piri piri flavored buddy burger."
+  },
+  {
+    "name": "Teen Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=teen-burger&lang=teen-burger-en",
+    "description": "Classic teen burger with fresh ingredients."
+  },
+  {
+    "name": "Double Teen Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=double-teen-burger&lang=double-teen-burger-en",
+    "description": "Double the classic teen burger with extra layers."
+  },
+  {
+    "name": "Mozza Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=mozza-burger&lang=mozza-burger-en",
+    "description": "Mozzarella cheese topped burger with fresh veggies."
+  },
+  {
+    "name": "Double Mozza Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=double-mozza-burger&lang=double-mozza-burger-en",
+    "description": "Double layers of mozzarella cheese and patties."
+  },
+  {
+    "name": "Papa Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=papa-burger&lang=papa-burger-en",
+    "description": "Hearty papa burger with A&W sauce."
+  },
+  {
+    "name": "Mama Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=mama-burger&lang=mama-burger-en",
+    "description": "Classic mama burger with fresh toppings."
+  },
+  {
+    "name": "Grandpa Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=grandpa-burger&lang=grandpa-burger-en",
+    "description": "Grandpa burger with triple layers of beef patties."
+  },
+  {
+    "name": "Cheddar Bacon Uncle Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=cheddar-bacon-uncle-burger&lang=cheddar-bacon-uncle-burger-en",
+    "description": "Cheddar bacon burger with crispy bacon and cheddar cheese."
+  },
+  {
+    "name": "Buddy Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=buddy-burger&lang=buddy-burger-en",
+    "description": "Simple buddy burger with fresh ingredients."
+  },
+  {
+    "name": "Double Buddy Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=double-buddy-burger&lang=double-buddy-burger-en",
+    "description": "Double the layers of the classic buddy burger."
+  },
+  {
+    "name": "Baby Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=baby-burger&lang=baby-burger-en",
+    "description": "Small-sized baby burger perfect for kids."
+  },
+  {
+    "name": "Beyond Meat Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=beyond-meat-burger&lang=beyond-meat-burger-en",
+    "description": "Plant-based Beyond Meat burger with delicious toppings."
+  }
+]

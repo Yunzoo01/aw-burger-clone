@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Spicy Chipotle Chicken Cheddar",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=spicy-chipotle-chicken-cheddar&lang=spicy-chipotle-chicken-cheddar-en",
+    "description": "A spicy chipotle chicken sandwich with cheddar cheese."
+  },
+  {
+    "name": "Whistle Dog",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=whistle-dog&lang=whistle-dog-en",
+    "description": "A tasty hot dog topped with delicious ingredients."
+  },
+  {
+    "name": "Chicken Cheddar",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=chicken-cheddar&lang=chicken-cheddar-en",
+    "description": "A classic chicken sandwich with cheddar cheese."
+  },
+  {
+    "name": "Spicy Piri Piri Potato Buddy",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=spicy-piri-piri-potato-buddy&lang=spicy-piri-piri-potato-buddy-en",
+    "description": "A spicy Piri Piri flavored potato buddy burger."
+  },
+  {
+    "name": "Chubby Chicken Cruncher",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=chubby-chicken-cruncher&lang=chubby-chicken-cruncher-en",
+    "description": "A crispy chubby chicken cruncher sandwich."
+  },
+  {
+    "name": "Spicy Piri Piri Chicken Buddy",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=spicy-piri-piri-chicken-buddy&lang=spicy-piri-piri-chicken-buddy-en",
+    "description": "Spicy Piri Piri chicken buddy burger."
+  },
+  {
+    "name": "Nashville Hot Chicken Cruncher",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=nashville-hot-chicken-cruncher&lang=nashville-hot-chicken-cruncher-en",
+    "description": "Nashville hot flavored chicken cruncher sandwich."
+  },
+  {
+    "name": "BLT Chicken Cruncher",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=blt-chicken-cruncher&lang=blt-chicken-cruncher-en",
+    "description": "A BLT chicken cruncher sandwich with crispy bacon."
+  },
+  {
+    "name": "Chubby Chicken Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=chubby-chicken-burger&lang=chubby-chicken-burger-en",
+    "description": "A classic chubby chicken burger."
+  },
+  {
+    "name": "Chicken Buddy Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=chicken-buddy-burger&lang=chicken-buddy-burger-en",
+    "description": "A simple chicken buddy burger."
+  },
+  {
+    "name": "Double Chicken Buddy Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=double-chicken-buddy-burger&lang=double-chicken-buddy-burger-en",
+    "description": "Double layered chicken buddy burger."
+  },
+  {
+    "name": "BLT Chicken Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=blt-chicken-burger&lang=blt-chicken-burger-en",
+    "description": "BLT chicken burger with crispy bacon."
+  },
+  {
+    "name": "Spicy Habanero Chicken Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=spicy-habanero-chicken-burger&lang=spicy-habanero-chicken-burger-en",
+    "description": "A spicy habanero chicken burger."
+  },
+  {
+    "name": "Dipping Sauce",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=dipping-sauce&lang=dipping-sauce-en",
+    "description": "A variety of dipping sauces for your meal."
+  },
+  {
+    "name": "Chicken Strips",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=chicken-strips&lang=chicken-strips-en",
+    "description": "Crispy chicken strips."
+  },
+  {
+    "name": "Hot Dog",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=hot-dog&lang=hot-dog-en",
+    "description": "A classic hot dog."
+  },
+  {
+    "name": "Bacon Chicken Wrap",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=bacon-chicken-wrap&lang=bacon-chicken-wrap-en",
+    "description": "A delicious bacon chicken wrap."
+  },
+  {
+    "name": "Spicy Chipotle Chicken Wrap",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=spicy-chipotle-chicken-wrap&lang=spicy-chipotle-chicken-wrap-en",
+    "description": "A spicy chipotle chicken wrap."
+  }
+]

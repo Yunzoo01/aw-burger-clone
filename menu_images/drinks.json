@@ -1,0 +1,77 @@
+[
+  {
+    "name": "A&W Root Beer",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=aw-root-beer&lang=aw-root-beer-en",
+    "description": "A&W's signature root beer."
+  },
+  {
+    "name": "Diet A&W Root Beer",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=diet-aw-root-beer&lang=diet-aw-root-beer-en",
+    "description": "A diet version of A&W's famous root beer."
+  },
+  {
+    "name": "Coca-Cola",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=coca-cola&lang=coca-cola-en",
+    "description": "Classic Coca-Cola."
+  },
+  {
+    "name": "Diet Coke",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=diet-coke&lang=diet-coke-en",
+    "description": "A low-calorie alternative to Coca-Cola."
+  },
+  {
+    "name": "Coke Zero",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=coke-zero&lang=coke-zero-en",
+    "description": "Coca-Cola Zero Sugar."
+  },
+  {
+    "name": "Sprite",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=sprite&lang=sprite-en",
+    "description": "A refreshing lemon-lime flavored soda."
+  },
+  {
+    "name": "Iced Tea",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=iced-tea&lang=iced-tea-en",
+    "description": "A cold, refreshing iced tea."
+  },
+  {
+    "name": "Orange Juice",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=orange-juice&lang=orange-juice-en",
+    "description": "Freshly squeezed orange juice."
+  },
+  {
+    "name": "Apple Juice",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=apple-juice&lang=apple-juice-en",
+    "description": "Fresh apple juice."
+  },
+  {
+    "name": "Brewed Coffee",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=brewed-coffee&lang=brewed-coffee-en",
+    "description": "Freshly brewed hot coffee."
+  },
+  {
+    "name": "Tea",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=tea&lang=tea-en",
+    "description": "A variety of hot tea selections."
+  },
+  {
+    "name": "Hot Chocolate",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=hot-chocolate&lang=hot-chocolate-en",
+    "description": "Rich and creamy hot chocolate."
+  },
+  {
+    "name": "2% Milk",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=2-milk&lang=2-milk-en",
+    "description": "A cool and refreshing glass of 2% milk."
+  },
+  {
+    "name": "1% Chocolate Milk",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=1-chocolate-milk&lang=1-chocolate-milk-en",
+    "description": "Delicious 1% chocolate milk."
+  },
+  {
+    "name": "Lemonade",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=lemonade&lang=lemonade-en",
+    "description": "A sweet and tart lemonade."
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Kids Buddy Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=kids-buddy-burger&lang=kids-buddy-burger-en",
+    "description": "A kid-sized version of the classic Buddy Burger."
+  },
+  {
+    "name": "Kids Buddy Burger with Cheese",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=kids-buddy-burger-with-cheese&lang=kids-buddy-burger-with-cheese-en",
+    "description": "A kid-sized Buddy Burger with cheese."
+  },
+  {
+    "name": "Kids Chicken Strips",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=kids-chicken-strips&lang=kids-chicken-strips-en",
+    "description": "Crispy chicken strips for kids."
+  },
+  {
+    "name": "Kids Chicken Buddy Burger",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=kids-chicken-buddy-burger&lang=kids-chicken-buddy-burger-en",
+    "description": "A kid-sized chicken Buddy Burger."
+  },
+  {
+    "name": "Kids Hot Dog",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=kids-hot-dog&lang=kids-hot-dog-en",
+    "description": "A classic hot dog sized just for kids."
+  }
+]

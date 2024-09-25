@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Churros",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=churros&lang=churros-en",
+    "description": "Delicious churros with a cinnamon sugar coating."
+  },
+  {
+    "name": "Russet Thick-Cut Fries",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=russet-thick-cut-fries&lang=russet-thick-cut-fries-en",
+    "description": "Thick-cut fries made from Russet potatoes."
+  },
+  {
+    "name": "Raspberry Turnover",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=raspberryturnover&lang=raspberryturnover-en",
+    "description": "A sweet raspberry turnover with flaky pastry."
+  },
+  {
+    "name": "Onion Rings",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=onion-rings&lang=onion-rings-en",
+    "description": "Crispy golden onion rings."
+  },
+  {
+    "name": "Sweet Potato Fries",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=sweet-potato-fries&lang=sweet-potato-fries-en",
+    "description": "Crispy and delicious sweet potato fries."
+  },
+  {
+    "name": "Chipotle Mayonnaise",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=chipotle-mayonnaise&lang=chipotle-mayonnaise-en",
+    "description": "Spicy chipotle-flavored mayonnaise."
+  },
+  {
+    "name": "Poutine",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=poutine&lang=poutine-en",
+    "description": "Classic Canadian poutine with fries, cheese curds, and gravy."
+  },
+  {
+    "name": "Gravy",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=gravy&lang=gravy-en",
+    "description": "Rich and flavorful gravy."
+  },
+  {
+    "name": "Kraft Table Spreads",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=kraft-table-spreads&lang=kraft-table-spreads-en",
+    "description": "Kraft table spreads to complement your meal."
+  },
+  {
+    "name": "Apple Turnover",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=apple-turnover&lang=apple-turnover-en",
+    "description": "A warm, flaky apple turnover with a sweet filling."
+  },
+  {
+    "name": "Root Beer Lollipops",
+    "imageUrl": "https://web.aw.ca/i/menu/?i=root-beer-lollipops&lang=root-beer-lollipops-en",
+    "description": "A&W's signature root beer flavored lollipops."
+  }
+]
